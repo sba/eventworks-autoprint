@@ -29,7 +29,6 @@ while(1){
             Start-Process -FilePath $_.FullName –Verb Print 
 
             # give some time to print... increase for printing of very large file or stop script before printing
-            Write-Host  -NoNewline
             $sec_pause = 20
             For ($i=0; $i -le $sec_pause; $i++) {
                 Start-Sleep -s 1 
