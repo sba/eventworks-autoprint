@@ -5,7 +5,7 @@
 # define envroinment
 $pdfdir="C:\Users\Stefan\Downloads\"
 $pdfdirprinted="C:\Users\Stefan\Downloads\printed\" 
-$pdfprefix = "EuropeanAthleticsU23U20Championships2021_0_" #only print accr pdf files
+$pdfprefix = "EuropeanAthleticsIndoorChampionships2023_0_" #only print accr pdf files
 
 
 function Get-TimeStamp {
