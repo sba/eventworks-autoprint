@@ -5,9 +5,8 @@
 # define envroinment
 $pdfdir="C:\Users\Stefan\Downloads\"
 $pdfdirprinted="C:\Users\Stefan\Downloads\printed\" 
-$downloading = 0
 $pdfprefix = "EuropeanAthleticsChampionships2024_0_" #only print accr pdf files
-
+$downloading = 0
 
 function Get-TimeStamp {
     return "[{0:dd/MM/yy} {0:HH:mm:ss}]" -f (Get-Date)
@@ -30,6 +29,7 @@ while(1){
             Start-Process -FilePath $_.FullName –Verb Print 
 
             # give some time to print... increase for printing of very large file or stop script before printing
+            Write-Host  -NoNewline
             $sec_pause = 10
             For ($i=0; $i -le $sec_pause; $i++) {
                 Start-Sleep -s 1 
