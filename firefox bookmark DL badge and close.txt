@@ -1,0 +1,1 @@
+javascript:(function(){     $('.dialogRoot a')[0].click();    $('.dialogRoot .buttonStandard')[1].click();    })();
